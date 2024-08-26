@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Registration System - Register new students.">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="student registration system.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="image.png" alt="Logo" class="logo">
+            <h1>Student Registration System</h1>
+        </div>
+        <nav>
+            <a href="Form page .html">Register Student</a>
+            <a href="view students page .html">View Students</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="registration-form">
+            <h2>Register a New Student</h2>
+            <form id="studentForm" class="glass-form">
+                <div class="input-group">
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" name="studentName" required pattern="[A-Za-z\s]+" title="Please enter only alphabets.">
+                </div>
+                
+                <div class="input-group">
+                    <label for="studentId">Student ID:</label>
+                    <input type="number" id="studentId" name="studentId" required title="Please enter a valid number.">
+                </div>
+                
+                <div class="input-group">
+                    <label for="emailId">Email ID:</label>
+                    <input type="email" id="emailId" name="emailId" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="contactNo">Contact No:</label>
+                    <input type="tel" id="contactNo" name="contactNo" required pattern="[0-9]{10}" title="Please enter a valid 10-digit contact number.">
+                </div>
+                
+                <button type="submit" class="glass-button">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Student Registration System. All rights reserved.</p>
+    </footer>
+
+    <script src="student registration system.js"></script>
+</body>
+</html>
+
